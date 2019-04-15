@@ -37,6 +37,6 @@ export default function QuizAnswersBreakdown({
     );
   });
 
-  return (<><div className="quiz-breakdown-text">For each question the correct answer is marked with "✓", and your given answer is marked with a <span style={{backgroundColor:"#F7C66A"}}>yellow background</span>. </div>
+  return (<><div className="quiz-breakdown-text">Alla rätta svar är markerade med "✓", och de svaret du angav är markerat med <span style={{backgroundColor:"#F7C66A"}}>gul bakgrund</span>. Observera att vissa frågor har fler än ett korrekt svar! :) </div>
   <div className="quiz-breakdown">{rows}</div></>);
 }
