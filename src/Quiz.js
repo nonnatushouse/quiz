@@ -71,15 +71,34 @@ export default function Quiz() {
           questionOrder={state.questionOrder}
         />
         <div className="quiz-score-info">
-          Grattis! Du fick alla rätt! Alltså har du klarat av quizet, och nu är det dags för din belöning!
+          Grattis! Du fick alla rätt! Alltså har du klarat av quizet, och nu är
+          det dags för din belöning!
         </div>
         <div className="quiz-score-info">
           För att få belöningen måste du meddela den hemliga koden till pappa.
         </div>
-        <div className="quiz-score-info"><span style={{backgroundColor:"#F7C66A"}}>Hemlig kod: "Ägg, ägg, mera ägg, ät så får du skägg!"</span></div>
-        <div className="quiz-score-info">OBS! Koden måste framföras som en SÅNG, annars blir det inget pris.</div>
-        <div className="quiz-score-info">För hjälp med att hitta melodin kan man lyssna på originalet <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=9ja4xqW8LOg">här</a></div>
-        <div className="quiz-score-info">Scrolla ner för att se dina svar</div>
+        <div className="quiz-score-info">
+          <span style={{ backgroundColor: "#F7C66A" }}>
+            Hemlig kod: "Ägg, ägg, mera ägg, ät så får du skägg!"
+          </span>
+        </div>
+        <div className="quiz-score-info">
+          OBS! Koden måste framföras som en SÅNG, annars blir det inget pris.
+        </div>
+        <div className="quiz-score-info">
+          För hjälp med att hitta melodin kan man lyssna på originalet{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/watch?v=9ja4xqW8LOg"
+          >
+            här
+          </a>
+        </div>
+        <div className="quiz-score-info">
+          Scrolla ner för att se dina svar (och vilka andra svar som hade varit
+          rätt)
+        </div>
         <QuizAnswersBreakdown
           questions={state.questions}
           givenAnswers={state.givenAnswers}
@@ -92,25 +111,44 @@ export default function Quiz() {
         >
           Spela igen
         </button>
-
       </div>
     ) : (
       <div className="quiz-over-container">
-      <QuizScore
-        questions={state.questions}
-        givenAnswers={state.givenAnswers}
-        questionOrder={state.questionOrder}
-      />
-              <div className="quiz-score-info">Tyvärr räckte det inte hela vägen fram. Men klicka på knappen nedan så får du försöka igen!</div>
-      <div>
-        <button
-          className="quiz-reset-button"
-          type="button"
-          onClick={() => dispatch({ type: "PLAY_AGAIN" })}
-        >
-          Spela igen
-        </button>
-      </div>
+        <QuizScore
+          questions={state.questions}
+          givenAnswers={state.givenAnswers}
+          questionOrder={state.questionOrder}
+        />
+        <div className="quiz-score-info">
+          Tyvärr räckte det inte hela vägen fram. Men klicka på knappen nedan så
+          får du försöka igen!
+        </div>
+
+          <button
+            className="quiz-reset-button"
+            type="button"
+            onClick={() => dispatch({ type: "PLAY_AGAIN" })}
+          >
+            Spela igen
+          </button>
+          <div className="quiz-score-info">
+            Om det skulle vara något som är särskilt svårt går det bra att
+            tjuvkika här nedan. Men försök gärna själv en gång till först. Glöm
+            inte att det går bra att ta hjälp av andra, eller google!
+          </div>
+          <QuizAnswersBreakdown
+            questions={state.questions}
+            givenAnswers={state.givenAnswers}
+            questionOrder={state.questionOrder}
+          />
+                    <button
+            className="quiz-reset-button"
+            type="button"
+            onClick={() => dispatch({ type: "PLAY_AGAIN" })}
+          >
+            Spela igen
+          </button>
+
       </div>
     );
   }

@@ -104,6 +104,8 @@
 
 .quiz-score-info {
     margin-bottom: 2rem;
+    max-width: 40rem;
+    width: 95vh;
 }
 
 .quiz-reset-button, .quiz-start-button {

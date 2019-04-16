@@ -121,7 +121,7 @@ export default function getQuestions() {
     "default-real-order-based-on": {
       id: "default-real-order-based-on",
       question:
-        "Vilken av följande städer ligger längst ifrån Påskön (fågelvägen)",
+        "Vilken av följande städer ligger längst ifrån Påskön (fågelvägen)?",
       answers: [
         { id: "a", answer: "Peking, Kina", isCorrect: true },
         { id: "b", answer: "Stockholm, Sverige", isCorrect: false },
@@ -147,7 +147,7 @@ export default function getQuestions() {
       answers: [
         { id: "a", answer: "I en avstängd hiss", isCorrect: true }, 
         { id: "b", answer: "I Gibbs källare", isCorrect: true }, 
-        { id: "c", answer: "I dierktörens kontor (efter en 'security lockdown')", isCorrect: true }, 
+        { id: "c", answer: "På direktörens kontor efter en 'security lockdown'", isCorrect: true }, 
         { id: "d", answer: "Vart som helst, så länge Tony har initierat en 'campfire'", isCorrect: true }
       ]
     },
@@ -161,9 +161,73 @@ export default function getQuestions() {
         { id: "c", answer: "Andersson", isCorrect: true }, 
         { id: "d", answer: "Irene Adler", isCorrect: true }
       ]
-    }
-
-
+    },
+    "default-games-at-nonnatus23": {
+      id: "default-games-at-nonnatus23",
+      question:
+        "Vad kallas brukar de kalla den som är 'Secretary of the Navy' för i NCIS?",
+      answers: [
+        { id: "a", answer: "Cheif", isCorrect: false }, 
+        { id: "b", answer: "Mr Navy", isCorrect: false }, 
+        { id: "c", answer: "SECNAV", isCorrect: true }, 
+        { id: "d", answer: "Aquaman", isCorrect: false}
+      ]
+    },
+    "default-games-at-nonnatus123": {
+      id: "default-games-at-nonnatus123",
+      question:
+        "Vad heter Lestrade i förnamn?",
+      answers: [
+        { id: "a", answer: "Greg", isCorrect: true }, 
+        { id: "b", answer: "Geoffrey", isCorrect: false }, 
+        { id: "c", answer: "Gary", isCorrect: false }, 
+        { id: "d", answer: "George", isCorrect: false }
+      ]
+    },
+    "default-games-at-nonnatus321": {
+      id: "default-games-at-nonnatus321",
+      question:
+        "Vad/vilka handlar Matildas (nuvarande) favoritserie om?",
+      answers: [
+        { id: "a", answer: "Barnmorskor", isCorrect: true }, 
+        { id: "b", answer: "Häxor", isCorrect: false }, 
+        { id: "c", answer: "Troll", isCorrect: false }, 
+        { id: "d", answer: "Nunnor", isCorrect: true }
+      ]
+    },
+    "default-games-at-nonnatus5": {
+      id: "default-games-at-nonnatus5",
+      question:
+        "Vem gjorde så att Gibbs fick tillbaka minnet efter att han tappade det i en explosion?",
+      answers: [
+        { id: "a", answer: "Abby", isCorrect: false }, 
+        { id: "b", answer: "Ziva", isCorrect: true }, 
+        { id: "c", answer: "Tony", isCorrect: false }, 
+        { id: "d", answer: "Ducky", isCorrect: false }
+      ]
+    },
+    "default-games-at-nonnatus4": {
+      id: "default-games-at-nonnatus4",
+      question:
+        "Vad för bil har pappa i garaget?",
+      answers: [
+        { id: "a", answer: "Jaguar", isCorrect: false }, 
+        { id: "b", answer: "Polo", isCorrect: false }, 
+        { id: "c", answer: "Corvette", isCorrect: true }, 
+        { id: "d", answer: "Rolls Royce", isCorrect: false }
+      ]
+    },
+    "default-games-at-nonnatus6": {
+      id: "default-games-at-nonnatus6",
+      question:
+        "Avsluta meningen: Matilda är...",
+      answers: [
+        { id: "a", answer: "en knäppis", isCorrect: true }, 
+        { id: "b", answer: "knäpp", isCorrect: true }, 
+        { id: "c", answer: "jätteknäpp", isCorrect: true }, 
+        { id: "d", answer: "fullkomligt normal", isCorrect: false }
+      ]
+    },
 
   };
 }
